@@ -4,15 +4,20 @@
 
 int main()
 {
+
+    /*int *numeros = geraNumeros(100,50);
+    
+    int i;
+    for (i = 0; i < 50; i++) {
+        printf("%d ", numeros[i]);
+
+    }*/
+
+    
     
     char quadro[ALTURA][LARGURA];
     criarQuadroVazio(quadro);
-    int i;
-    for (i = 0; i < 20; i++) {
-        insereFigura(quadro,LX,1);
-
-    }
-//
+    insereFigura(quadro,LT,100);
     mostrarQuadro(quadro);
 
     return 0;

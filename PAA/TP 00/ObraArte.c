@@ -4,19 +4,18 @@
 #include <time.h>
 
 #include "ObraArte.h"
-int valor =0, prontas = 0, total = 1;
+int valor = 0, prontas = 0, total = 1;
 
+void criarQuadroVazio(char quadro[][LARGURA]) {
+    int i, j;
 
-void criarQuadroVazio(char quadro[][LARGURA]){
-    int i,j;
-
-    for(i=0; i<ALTURA; i++){
-        for(j=0; j<LARGURA; j++){
+    for (i = 0; i < ALTURA; i++) {
+        for (j = 0; j < LARGURA; j++) {
             quadro[i][j] = ' ';
-            if(j == 0 || j == LARGURA-1){
+            if (j == 0 || j == LARGURA - 1) {
                 quadro[i][j] = '|';
             }
-            if(i == 0 || i == ALTURA-1){
+            if (i == 0 || i == ALTURA - 1) {
                 quadro[i][j] = '-';
             }
 
@@ -26,175 +25,110 @@ void criarQuadroVazio(char quadro[][LARGURA]){
 
 }
 
-void mostrarQuadro(char quadro[][LARGURA]){
-    int i,j;
+void mostrarQuadro(char quadro[][LARGURA]) {
+    int i, j;
     printf("\n");
-    for(i=0; i<ALTURA; i++){
-        for(j=0; j<LARGURA; j++){
-            printf("%c",quadro[i][j]);
+    for (i = 0; i < ALTURA; i++) {
+        for (j = 0; j < LARGURA; j++) {
+            printf("%c", quadro[i][j]);
         }
         printf("\n");
     }
 }
 
-/*void insereFigura(char quadro[][LARGURA], int figura, int qtd){
-    int x,y;
-    do{
-        x = geraNumero(ALTURA);
-        y = geraNumero(LARGURA);
-    }while(x >= ALTURA || y >= LARGURA);
-    geraNumero(LARGURA);
-    geraNumero(LARGURA);
-    geraNumero(ALTURA);
-    switch (figura){
+void insereFigura(char quadro[][LARGURA], int figura, int qtd) {
+    int i, erro = 0;
+    int *x = geraNumeros(ALTURA, qtd);
+    int *y = geraNumeros(LARGURA, qtd);
+    int *auxX, *auxY;
+
+    switch (figura) {
         case ASTERISCO:
-            if (verificaVazio(quadro,x,y)) {
-                quadro[x][y] = '*';
-                contaFiguraADD(qtd);
-                return;
-            }else{
-                insereFigura(quadro,figura,qtd);
+            for (i = 0; i < qtd; i++) {
+                if (verificaVazio(quadro, x[i], y[i])) {
+                    printf("%d %d\n", x[i], y[i]);
+                    quadro[x[i]][y[i]] = '*';
+                    contaFiguraADD(qtd);
+                } else {
+                    x[i] = geraNumero(ALTURA);
+                    y[i] = geraNumero(LARGURA);
+                    i--;
+                }
             }
             break;
         case SOMA:
-            if (verificaVazio(quadro,x,y) && verificaVazio(quadro,x,y+1) && 
-                verificaVazio(quadro,x-1,y) && verificaVazio(quadro,x+1,y) && verificaVazio(quadro,x,y-1)) {
-                quadro[x][y+1] = '*';
-                quadro[x-1][y] = '*';
-                quadro[x][y] = '*';
-                quadro[x+1][y] = '*';
-                quadro[x][y-1] = '*';
-                contaFiguraADD(qtd);
-                return;
-            }else{
-                insereFigura(quadro,figura,qtd);
+            for (i = 0; i < qtd; i++) {
+                if (verificaVazio(quadro, x[i], y[i]) && verificaVazio(quadro, x[i], y[i] + 1) &&
+                        verificaVazio(quadro, x[i] - 1, y[i]) && verificaVazio(quadro, x[i] + 1, y[i]) && verificaVazio(quadro, x[i], y[i] - 1)) {
+                    quadro[x[i]][y[i] + 1] = '*';
+                    quadro[x[i] - 1][y[i]] = '*';
+                    quadro[x[i]][y[i]] = '*';
+                    quadro[x[i] + 1][y[i]] = '*';
+                    quadro[x[i]][y[i] - 1] = '*';
+                    contaFiguraADD(qtd);
+                } else {
+                    x[i] = geraNumero(ALTURA);
+                    y[i] = geraNumero(LARGURA);
+                    i--;
+                }
             }
             break;
         case LX:
-            if (verificaVazio(quadro,x,y) && verificaVazio(quadro,x-1,y-1) && 
-                verificaVazio(quadro,x-1,y+1) && verificaVazio(quadro,x+1,y-1) && verificaVazio(quadro,x+1,y+1)) {
-                quadro[x][y] = '*';
-                quadro[x-1][y-1] = '*';
-                quadro[x-1][y+1] = '*';
-                quadro[x+1][y-1] = '*';
-                quadro[x+1][y+1] = '*';
-                contaFiguraADD(qtd);
-                return;
-            }else{
-                insereFigura(quadro,figura,qtd);
+            printf("qtd = %d", qtd);
+            for (i = 0; i < qtd; i++) {
+                if (verificaVazio(quadro, x[i], y[i]) && verificaVazio(quadro, x[i] - 1, y[i] - 1) &&
+                        verificaVazio(quadro, x[i] - 1, y[i] + 1) && verificaVazio(quadro, x[i] + 1, y[i] - 1) && verificaVazio(quadro, x[i] + 1, y[i] + 1)) {
+                    quadro[x[i]][y[i]] = '*';
+                    quadro[x[i] - 1][y[i] - 1] = '*';
+                    quadro[x[i] - 1][y[i] + 1] = '*';
+                    quadro[x[i] + 1][y[i] - 1] = '*';
+                    quadro[x[i] + 1][y[i] + 1] = '*';
+                    contaFiguraADD(qtd);
+                } else {
+                    x[i] = geraNumero(ALTURA);
+                    y[i] = geraNumero(LARGURA);
+                    i--;
+                }
             }
             break;
         case LT:
-            if (verificaVazio(quadro,x,y) && verificaVazio(quadro,x-1,y+1) && 
-                verificaVazio(quadro,x-1,y-1) && verificaVazio(quadro,x+1,y) && verificaVazio(quadro,x-1,y)) {
-                quadro[x-1][y+1] = '*';
-                quadro[x-1][y-1] = '*';
-                quadro[x+1][y] = '*';
-                quadro[x][y] = '*';
-                quadro[x-1][y] = '*';
+            
+            for (i = 0; i < qtd; i++) {
+            if (verificaVazio(quadro, x[i], y[i]) && verificaVazio(quadro, x[i] - 1, y[i] + 1) &&
+                    verificaVazio(quadro, x[i] - 1, y[i] - 1) && verificaVazio(quadro, x[i] + 1, y[i]) && verificaVazio(quadro, x[i] - 1, y[i])) {
+                quadro[x[i] - 1][y[i] + 1] = '*';
+                quadro[x[i] - 1][y[i] - 1] = '*';
+                quadro[x[i] + 1][y[i]] = '*';
+                quadro[x[i]][y[i]] = '*';
+                quadro[x[i] - 1][y[i]] = '*';
                 contaFiguraADD(qtd);
-                return;
-            }else{
-                insereFigura(quadro,figura,qtd);
+            } else {
+                x[i] = geraNumero(ALTURA);
+                y[i] = geraNumero(LARGURA);
+                i--;
+                erro++;
+                auxX = geraNumeros(ALTURA, qtd);
+                auxY = geraNumeros(LARGURA, qtd);
+                x[i] = auxX[i+1];
+                y[i] = auxY[i-1];
+                
+                /*if (erro % 1000 == 0) {
+                    valor = 0;
+                }*/
+//printf("\n%d %d %d",x[i],y[i],valor);
+                if (erro > 100000) {
+                    printf("ERRO %d",erro);
+                    break;
+                }
+
+            }
             }
     }
-    
-    
+    printf("Total de figuras: %d",prontas);
 
-}*/
-
-
-void insereFigura(char quadro[][LARGURA], int figura, int qtd){
-    int x,y, cont = 0;
-    x = geraNumero(ALTURA);
-    y = geraNumero(LARGURA);
-    switch (figura){
-        case ASTERISCO:
-            while (insereAsterisco(quadro,x,y) == 0) {
-                x = geraNumero(ALTURA);
-                y = geraNumero(LARGURA);
-            }
-
-            break;
-        case SOMA:
-            while (insereSoma(quadro,x,y) == 0 && cont < 5000) {
-                printf("%d",cont);
-                x = geraNumero(ALTURA);
-                y = geraNumero(LARGURA);
-                cont++;
-            }
-            break;
-        case LX:
-            while (insereLX(quadro,x,y) == 0) {
-                x = geraNumero(ALTURA);
-                y = geraNumero(LARGURA);
-            }
-            break;
-        case LT:
-            while (insereLT(quadro,x,y) == 0) {
-                x = geraNumero(ALTURA);
-                y = geraNumero(LARGURA);
-            }
-            break;
-    }
-    
-    
-
-    
 }
 
-int insereAsterisco(char quadro[][LARGURA], int x, int y) {
-    if (verificaVazio(quadro, x, y)) {
-        quadro[x][y] = '*';
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
-int insereSoma(char quadro[][LARGURA], int x, int y) {
-    if (verificaVazio(quadro,x,y) && verificaVazio(quadro,x,y+1) && 
-                verificaVazio(quadro,x-1,y) && verificaVazio(quadro,x+1,y) && verificaVazio(quadro,x,y-1)) {
-                quadro[x][y+1] = '*';
-                quadro[x-1][y] = '*';
-                quadro[x][y] = '*';
-                quadro[x+1][y] = '*';
-                quadro[x][y-1] = '*';
-                return 1;
-            }else{
-                return 0;
-            }
-}
-
-int insereLX(char quadro[][LARGURA], int x, int y) {
-    if (verificaVazio(quadro,x,y) && verificaVazio(quadro,x-1,y-1) && 
-                verificaVazio(quadro,x-1,y+1) && verificaVazio(quadro,x+1,y-1) && verificaVazio(quadro,x+1,y+1)) {
-                quadro[x][y] = '*';
-                quadro[x-1][y-1] = '*';
-                quadro[x-1][y+1] = '*';
-                quadro[x+1][y-1] = '*';
-                quadro[x+1][y+1] = '*';
-                return 1;
-            }else{
-                return 0;
-            }
-}
-
-int insereLT(char quadro[][LARGURA], int x, int y) {
-    if (verificaVazio(quadro,x,y) && verificaVazio(quadro,x-1,y+1) && 
-                verificaVazio(quadro,x-1,y-1) && verificaVazio(quadro,x+1,y) && verificaVazio(quadro,x-1,y)) {
-                quadro[x-1][y+1] = '*';
-                quadro[x-1][y-1] = '*';
-                quadro[x+1][y] = '*';
-                quadro[x][y] = '*';
-                quadro[x-1][y] = '*';
-                return 1;
-            }else{
-                return 0;
-            }
-}
-
-int verificaVazio(char quadro[][LARGURA], int x, int y){
+int verificaVazio(char quadro[][LARGURA], int x, int y) {
     if (quadro[x][y] == ' ') {
         return 1;
     }
@@ -202,19 +136,30 @@ int verificaVazio(char quadro[][LARGURA], int x, int y){
 
 }
 
-
-int geraNumero(int max){
-    srand(time(NULL) + valor);
-    
-    valor++;
+int geraNumero(int max) {
+    srand( (unsigned)time(NULL) + valor);
+    valor ++;
     //printf("%d",valor);
-    if(valor % 5 == 0) valor-= 3;
+    //if(valor % 5 == 0) valor-= 3;
     return rand() % (max);
-    
-
 }
 
-void contaFiguraADD(int totalf){
+int geraNumeros(int max, int qtd) {
+    int *numeros;
+    numeros = malloc(sizeof (int)*qtd);
+    srand(time(NULL) + valor);
+    valor += 3;
+
+    int i;
+    for (i = 0; i < qtd; i++) {
+        numeros[i] = rand() % (max);
+    }
+
+
+    return numeros;
+}
+
+void contaFiguraADD(int totalf) {
     printf(".");
     prontas++;
     total = totalf;
