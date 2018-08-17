@@ -5,19 +5,10 @@
 int main()
 {
 
-    /*int *numeros = geraNumeros(100,50);
-    
-    int i;
-    for (i = 0; i < 50; i++) {
-        printf("%d ", numeros[i]);
-
-    }*/
-
-    
-    
     char quadro[ALTURA][LARGURA];
     criarQuadroVazio(quadro);
-    insereFigura(quadro,LT,100);
+    //insereFigura(quadro,LX,100);
+    insereAleatorio(quadro,100);
     mostrarQuadro(quadro);
 
     return 0;
