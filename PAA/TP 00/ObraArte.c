@@ -4,7 +4,7 @@
 #include <time.h>
 
 #include "ObraArte.h"
-int valor = 0, prontas = 0, total = 1;
+int prontas, total;
 
 void criarQuadroVazio(char quadro[][LARGURA]) { //cria quadro vazio so com bordas
     int i, j;
