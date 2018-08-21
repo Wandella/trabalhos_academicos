@@ -1,0 +1,8 @@
+Carlos;1231;21
+Maria;3211;21
+Hugo;2565;10
+Eliana;5478;10
+Marcos;5687;15
+Murilo;5856;21
+Marlene;5982;21
+Laurinda;5794;52

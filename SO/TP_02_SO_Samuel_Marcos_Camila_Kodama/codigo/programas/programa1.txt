@@ -1,0 +1,23 @@
+S 1000
+A 10
+F 2
+R programa2.txt
+B
+A 20
+D 30
+A 100
+A 10
+D 50
+F 2
+R programa2.txt
+A 10
+A 10
+A 10
+A 10
+A 10
+B
+A 10
+A 10
+A 10
+A 10
+E

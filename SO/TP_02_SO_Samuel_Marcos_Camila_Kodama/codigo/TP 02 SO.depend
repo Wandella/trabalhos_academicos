@@ -1,0 +1,165 @@
+# depslib dependency file v1.0
+1525552774 source:/home/samuel/Documentos/TP 02 SO/commander.c
+	"commander.h"
+	<unistd.h>
+
+1525553416 /home/samuel/Documentos/TP 02 SO/commander.h
+	<stdio.h>
+	<stdlib.h>
+	"manager.h"
+
+1525552910 source:/home/samuel/Documentos/TP 02 SO/Fila.c
+	"Fila.h"
+
+1525534165 /home/samuel/Documentos/TP 02 SO/Fila.h
+	<stdio.h>
+	<stdlib.h>
+
+1525552563 source:/home/samuel/Documentos/TP 02 SO/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commander.h"
+
+1525437320 /home/samuel/Documentos/TP 02 SO/processo.h
+	<stdio.h>
+	<stdlib.h>
+
+1523907717 /home/samuel/Documentos/TP 02 SO/Arquivo.h
+	"processo.h"
+
+1523799025 /home/samuel/Documentos/TP 02 SO/Arquivo.c
+	"Arquivo.h"
+	"processo.h"
+
+1525553146 source:/home/samuel/Documentos/TP 02 SO/processo.c
+	<string.h>
+	"processo.h"
+
+1523907841 source:/home/samuel/Documentos/TP 02 SO/Arquivo.c
+	"Arquivo.h"
+	"processo.h"
+
+1525553419 source:/home/samuel/Documentos/TP 02 SO/cpu.c
+	"cpu.h"
+
+1524849354 /home/samuel/Documentos/TP 02 SO/cpu.h
+	"processo.h"
+
+1525552567 source:/home/samuel/Documentos/TP 02 SO/reporter.c
+	"reporter.h"
+
+1525386270 /home/samuel/Documentos/TP 02 SO/reporter.h
+	"manager.h"
+
+1525553424 /home/samuel/Documentos/TP 02 SO/manager.h
+	"Fila.h"
+	"cpu.h"
+	"processo.h"
+
+1525552812 source:/home/samuel/Documentos/TP 02 SO/manager.c
+	<unistd.h>
+	"manager.h"
+
+1525455378 source:/home/aluno/Documentos/TP 02 SO/commander.c
+	"commander.h"
+	<unistd.h>
+
+1525436668 /home/aluno/Documentos/TP 02 SO/commander.h
+	<stdio.h>
+	<stdlib.h>
+	"manager.h"
+
+1525441610 /home/aluno/Documentos/TP 02 SO/manager.h
+	"Fila.h"
+	"cpu.h"
+	"processo.h"
+
+1525388798 /home/aluno/Documentos/TP 02 SO/Fila.h
+	<stdio.h>
+	<stdlib.h>
+
+1524849354 /home/aluno/Documentos/TP 02 SO/cpu.h
+	"processo.h"
+
+1525437320 /home/aluno/Documentos/TP 02 SO/processo.h
+	<stdio.h>
+	<stdlib.h>
+
+1525452018 source:/home/aluno/Documentos/TP 02 SO/cpu.c
+	"cpu.h"
+
+1525455536 source:/home/aluno/Documentos/TP 02 SO/Fila.c
+	"Fila.h"
+
+1525440988 source:/home/aluno/Documentos/TP 02 SO/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commander.h"
+
+1525437322 source:/home/aluno/Documentos/TP 02 SO/processo.c
+	<string.h>
+	"processo.h"
+
+1525455147 source:/home/aluno/Documentos/TP 02 SO/reporter.c
+	"reporter.h"
+
+1525386270 /home/aluno/Documentos/TP 02 SO/reporter.h
+	"manager.h"
+
+1525455364 source:/home/aluno/Documentos/TP 02 SO/manager.c
+	<unistd.h>
+	"manager.h"
+
+1525552774 source:/home/samuel/Documentos/TP 02 SO 1.0/commander.c
+	"commander.h"
+	<unistd.h>
+
+1525553416 /home/samuel/Documentos/TP 02 SO 1.0/commander.h
+	<stdio.h>
+	<stdlib.h>
+	"manager.h"
+
+1525553424 /home/samuel/Documentos/TP 02 SO 1.0/manager.h
+	"Fila.h"
+	"cpu.h"
+	"processo.h"
+
+1525534165 /home/samuel/Documentos/TP 02 SO 1.0/Fila.h
+	<stdio.h>
+	<stdlib.h>
+
+1524849354 /home/samuel/Documentos/TP 02 SO 1.0/cpu.h
+	"processo.h"
+
+1525437320 /home/samuel/Documentos/TP 02 SO 1.0/processo.h
+	<stdio.h>
+	<stdlib.h>
+
+1525553419 source:/home/samuel/Documentos/TP 02 SO 1.0/cpu.c
+	"cpu.h"
+
+1525552910 source:/home/samuel/Documentos/TP 02 SO 1.0/Fila.c
+	"Fila.h"
+
+1525552563 source:/home/samuel/Documentos/TP 02 SO 1.0/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commander.h"
+
+1525553402 source:/home/samuel/Documentos/TP 02 SO 1.0/manager.c
+	<unistd.h>
+	"manager.h"
+
+1525553146 source:/home/samuel/Documentos/TP 02 SO 1.0/processo.c
+	<string.h>
+	"processo.h"
+
+1525552567 source:/home/samuel/Documentos/TP 02 SO 1.0/reporter.c
+	"reporter.h"
+
+1525386270 /home/samuel/Documentos/TP 02 SO 1.0/reporter.h
+	"manager.h"
+

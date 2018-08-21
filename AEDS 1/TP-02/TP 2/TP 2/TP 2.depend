@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1446167747 source:d:\ufv\aeds\tp 2\tp 2\lista.c
+
+1446117963 d:\ufv\aeds\tp 2\tp 2\lista.h
+
+1446599714 source:d:\ufv\aeds\tp 2\tp 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vetor.h"
+	<windows.h>
+
+1446599714 source:d:\ufv\aeds\tp 2\tp 2\vetor.c
+	<stdio.h>
+	<stdlib.h>
+	"vetor.h"
+
+1446599736 d:\ufv\aeds\tp 2\tp 2\vetor.h
+
+1446637828 source:c:\users\samuel\desktop\ufv\periodo 2\aeds\tps\tp-02\tp 2\tp 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vetor.h"
+	<windows.h>
+
+1446596138 c:\users\samuel\desktop\ufv\periodo 2\aeds\tps\tp-02\tp 2\tp 2\vetor.h
+
+1446596116 source:c:\users\samuel\desktop\ufv\periodo 2\aeds\tps\tp-02\tp 2\tp 2\vetor.c
+	<stdio.h>
+	<stdlib.h>
+	"vetor.h"
+

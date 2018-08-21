@@ -1,0 +1,9 @@
+S 0
+A 10
+A 20
+B
+D 30
+F 1
+A 10
+R programa1.txt
+E

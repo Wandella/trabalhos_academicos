@@ -1,0 +1,9 @@
+Jose Maria;23; PPS; Prefeito
+Mariano;45; PSDB; Prefeito
+Rosa;12; PROSA; Prefeito
+Maria;50666;PSOL; Vereador
+Claudio;45000;PSDB; Vereador
+Carlos;15123; PMDB; Vereador
+Marcos;13666; PT; Vereador
+Eduardo Jorge;43111; PV; Vereador
+Anderson do Gas;27100; PSDC; Vereador

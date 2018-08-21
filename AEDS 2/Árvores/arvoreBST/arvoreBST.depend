@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1458052159 source:c:\users\samuel\desktop\testes codeblocks\arvorebst\arvorebst.c
+	"arvoreBST.h"
+
+1458050505 c:\users\samuel\desktop\testes codeblocks\arvorebst\arvorebst.h
+	<stdio.h>
+	<stdlib.h>
+
+1458051067 source:c:\users\samuel\desktop\testes codeblocks\arvorebst\main.c
+	"arvoreBST.c"
+
+1458052159 c:\users\samuel\desktop\testes codeblocks\arvorebst\arvorebst.c
+	"arvoreBST.h"
+
+1459905622 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\햞vores\arvorebst\arvorebst.c
+	"arvoreBST.h"
+
+1458050505 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\햞vores\arvorebst\arvorebst.h
+	<stdio.h>
+	<stdlib.h>
+
+1458051067 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\햞vores\arvorebst\main.c
+	"arvoreBST.c"
+
+1459905622 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\햞vores\arvorebst\arvorebst.c
+	"arvoreBST.h"
+

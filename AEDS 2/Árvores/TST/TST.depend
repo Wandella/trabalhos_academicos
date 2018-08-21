@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1459861106 source:c:\users\pedro_000\documents\ufv\3º periodo\aeds ii\tst\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TST.h"
+
+1459791864 source:c:\users\pedro_000\documents\ufv\3º periodo\aeds ii\tst\tst.c
+	<stdio.h>
+	<stdlib.h>
+	"TST.h"
+
+1459689022 c:\users\pedro_000\documents\ufv\3º periodo\aeds ii\tst\tst.h
+
+1459791866 source:c:\users\samuel\desktop\tst\tst.c
+	<stdio.h>
+	<stdlib.h>
+	"TST.h"
+
+1459689024 c:\users\samuel\desktop\tst\tst.h
+
+1459863312 source:c:\users\samuel\desktop\tst\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TST.h"
+
+1459866101 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\Árvores\tst\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"TST.h"
+
+1459689024 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\Árvores\tst\tst.h
+
+1459791866 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\Árvores\tst\tst.c
+	<stdio.h>
+	<stdlib.h>
+	"TST.h"
+

@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1443534864 source:c:\users\user\desktop\tp01\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1443534820 source:c:\users\user\desktop\tp01\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1443534864 c:\users\user\desktop\tp01\lista.h
+	<time.h>
+
+1443642057 source:c:\users\user\desktop\tp testando\lista.c
+	"Lista.h"
+
+1443639654 c:\users\user\desktop\tp testando\lista.h
+	<time.h>
+
+1443642176 source:c:\users\user\desktop\tp testando\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1443670654 source:g:\tp testando\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1443639656 g:\tp testando\lista.h
+	<time.h>
+
+1443671300 source:g:\tp testando\lista.c
+	"Lista.h"
+

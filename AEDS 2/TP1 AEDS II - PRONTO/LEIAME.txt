@@ -1,0 +1,7 @@
+*** LEIA-ME ****
+
+-> Para indexação de arquivos, estes devem estar na mesma pasta do programa.
+-> A busca de palavras deve se restringir a no máximo 100 caracteres, sendo 
+separadas pelo uso de espaços: " ".
+-> Tais arquivos devem ser inseridos/escritos levando em conta a extensão do 
+arquivo.

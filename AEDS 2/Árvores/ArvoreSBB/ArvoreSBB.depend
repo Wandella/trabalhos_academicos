@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1459902592 source:c:\users\samuel\desktop\arvoresbb\main.c
+	"SBB.h"
+
+1459902592 source:c:\users\samuel\desktop\arvoresbb\sbb.c
+	"SBB.h"
+
+1459902410 c:\users\samuel\desktop\arvoresbb\sbb.h
+	<sys/time.h>
+	<stdlib.h>
+	<stdio.h>
+
+1459902592 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\Árvores\arvoresbb\main.c
+	"SBB.h"
+
+1459908431 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\Árvores\arvoresbb\sbb.h
+	<sys/time.h>
+	<stdlib.h>
+	<stdio.h>
+
+1459902592 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\Árvores\arvoresbb\sbb.c
+	"SBB.h"
+

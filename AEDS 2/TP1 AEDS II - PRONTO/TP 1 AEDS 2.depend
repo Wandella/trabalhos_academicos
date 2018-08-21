@@ -1,0 +1,504 @@
+# depslib dependency file v1.0
+1461680063 source:d:\ufv\aeds ii\projetos aeds\Árvore binária\tp 1 aeds 2\lista1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista1.h"
+
+1461679686 d:\ufv\aeds ii\projetos aeds\Árvore binária\tp 1 aeds 2\lista1.h
+
+1461677826 source:d:\ufv\aeds ii\projetos aeds\Árvore binária\tp 1 aeds 2\lista2.c
+
+1461677834 source:d:\ufv\aeds ii\projetos aeds\Árvore binária\tp 1 aeds 2\patricia.c
+
+1461680039 source:d:\ufv\aeds ii\projetos aeds\Árvore binária\tp 1 aeds 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista1.h"
+
+1461680063 source:c:\users\samuel\desktop\tp 1 aeds 2\lista1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista1.h"
+
+1461679686 c:\users\samuel\desktop\tp 1 aeds 2\lista1.h
+
+1461677826 source:c:\users\samuel\desktop\tp 1 aeds 2\lista2.c
+
+1461957489 source:c:\users\samuel\desktop\tp 1 aeds 2\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462129334 source:c:\users\samuel\desktop\tp 1 aeds 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+
+1461953952 source:c:\users\samuel\desktop\tp 1 aeds 2\funcoes.c
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1461677822 c:\users\samuel\desktop\tp 1 aeds 2\lista2.h
+
+1461936022 c:\users\samuel\desktop\tp 1 aeds 2\patricia.h
+	"Lista.h"
+
+1461953944 c:\users\samuel\desktop\tp 1 aeds 2\lista.h
+
+1461936506 source:c:\users\samuel\desktop\tp 1 aeds 2\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1461953954 source:d:\ufv\aeds ii\tps\tp 1 aeds 2\funcoes.c
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1461953946 d:\ufv\aeds ii\tps\tp 1 aeds 2\lista.h
+
+1461936024 d:\ufv\aeds ii\tps\tp 1 aeds 2\patricia.h
+	"Lista.h"
+
+1461936508 source:d:\ufv\aeds ii\tps\tp 1 aeds 2\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462224778 source:d:\ufv\aeds ii\tps\tp 1 aeds 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	<locale.h>
+
+1462222876 source:d:\ufv\aeds ii\tps\tp 1 aeds 2\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1461953954 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 corretos\funcoes.c
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1461953946 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 corretos\lista.h
+
+1462229824 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 corretos\patricia.h
+	"Lista.h"
+
+1461936508 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 corretos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462229736 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 corretos\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462229072 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 corretos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	<locale.h>
+
+1461953954 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok\funcoes.c
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1462284026 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok\lista.h
+
+1462229824 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok\patricia.h
+	"Lista.h"
+
+1462284001 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462283213 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	<locale.h>
+
+1462284879 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1461953954 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\funcoes.c
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1462331039 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\lista.h
+
+1462326004 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\patricia.h
+	"Lista.h"
+
+1462331039 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462327157 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462340834 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462337486 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462340768 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 indice ok contagem ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"arquivo.h"
+	<locale.h>
+
+1461953954 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\funcoes.c
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1462331039 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\lista.h
+
+1462326004 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\patricia.h
+	"Lista.h"
+
+1462468450 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462327157 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462659347 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462469834 d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462660233 source:d:\ufv\aeds ii\tps\aeds ii primeiro tp case 1 e 3 total ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"arquivo.h"
+	<locale.h>
+
+1462684317 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462670367 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462331039 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\lista.h
+
+1462661780 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\patricia.h
+	"Lista.h"
+
+1462683744 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\funcoes.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462670670 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462682099 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"arquivo.h"
+	"QuickSort.h"
+	<locale.h>
+
+1462683744 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462662516 source:c:\users\samuel\desktop\teste.c
+	<string.h>
+	<stdio.h>
+
+1462659347 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462469834 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462331039 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\lista.h
+
+1462661780 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\patricia.h
+	"Lista.h"
+
+1462667216 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\funcoes.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"lista.h"
+	"patricia.h"
+
+1462468450 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462665981 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"arquivo.h"
+	<locale.h>
+
+1462661780 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok - seguranÇa\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462682717 c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\quicksort.h
+	<stdio.h>
+	<stdlib.h>
+	"patricia.h"
+
+1462683213 source:c:\users\samuel\desktop\aeds ii primeiro tp case 1 e 3 total ok\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462754630 source:c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462670367 c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462754502 c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\lista.h
+
+1462755553 c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\patricia.h
+	"Lista.h"
+
+1462754142 source:c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\funcoes.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462682717 c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\quicksort.h
+	<stdio.h>
+	<stdlib.h>
+	"patricia.h"
+
+1462755443 source:c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462753424 source:c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"arquivo.h"
+	"QuickSort.h"
+	<locale.h>
+
+1462755250 source:c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462683213 source:c:\users\samuel\desktop\tp1 aeds ii - falta conferir e fazer melhorias\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462754142 source:d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\funcoes.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462754502 d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\lista.h
+
+1462755553 d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\patricia.h
+	"Lista.h"
+
+1462682717 d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\quicksort.h
+	<stdio.h>
+	<stdlib.h>
+	"patricia.h"
+
+1462755443 source:d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462755648 source:d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"funcoes.h"
+	"arquivo.h"
+	"QuickSort.h"
+	<locale.h>
+
+1462755553 d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\funcoes.h
+
+1462756860 d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462755250 source:d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462683213 source:d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462755758 source:d:\ufv\aeds ii\tps\tp1 aeds ii - pronto\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462755758 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\arquivo.c
+	<stdio.h>
+	<stdlib.h>
+	"arquivo.h"
+	"patricia.h"
+	"lista.h"
+	<locale.h>
+
+1462756860 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\arquivo.h
+	"lista.h"
+	"patricia.h"
+
+1462754502 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\lista.h
+
+1462755553 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\patricia.h
+	"Lista.h"
+
+1462754142 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\funcoes.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+
+1462682717 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\quicksort.h
+	<stdio.h>
+	<stdlib.h>
+	"patricia.h"
+
+1462755443 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1462759457 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"funcoes.h"
+	"arquivo.h"
+	"QuickSort.h"
+	<locale.h>
+
+1462755553 c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\funcoes.h
+
+1462755250 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\patricia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"patricia.h"
+
+1462683213 source:c:\users\samuel\desktop\ufv\periodo 3\aeds 2\tp1 aeds ii - pronto\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"patricia.h"
+	"QuickSort.h"
+

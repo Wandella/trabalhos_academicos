@@ -1,0 +1,25 @@
+RELATÓRIO DAS ELEIÇÕES
+
+Resultado para PREFEITO:
+Brancos: 0
+Nulos:   0
+Válidos: 1
+TOTAL:   1
+---------------CANDIDATOS---------------
+1° - Mariano45-(PSDB): 1(100.0%)
+2° - Jose Maria23-(PPS): 0(0.0%)
+3° - Rosa12-(PROSA): 0(0.0%)
+
+___________________________________________________________
+Resultado para VEREADOR:
+Brancos: 0
+Nulos:   0
+Válidos: 1
+TOTAL:   1
+---------------CANDIDATOS---------------
+1° - Claudio45000-(PSDB): 1(100.0%)
+2° - Maria50666-(PSOL): 0(0.0%)
+3° - Carlos15123-(PMDB): 0(0.0%)
+4° - Marcos13666-(PT): 0(0.0%)
+5° - Eduardo Jorge43111-(PV): 0(0.0%)
+6° - Anderson do Gas27100-(PSDC): 0(0.0%)

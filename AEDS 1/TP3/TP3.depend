@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1447978752 source:d:\ufv\aeds\tp 3\tp3\lista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lista.h"
+
+1447897446 
+
+1447976655 d:\ufv\aeds\tp 3\tp3\lista.h
+
+1447981943 source:d:\ufv\aeds\tp 3\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	<locale.h>
+
+1447898629 source:/media/carlosub/5E51BE842A0060DC/UFV/AEDS/TP 3/TP3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+
+1447894948 /media/carlosub/5E51BE842A0060DC/UFV/AEDS/TP 3/TP3/lista.h
+
+1447898629 source:/media/carlosub/5E51BE842A0060DC/UFV/AEDS/TP 3/TP3/lista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lista.h"
+
+1448024489 source:c:\users\user\desktop\ufv\periodo 2\aeds\tps\tp3\lista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lista.h"
+
+1447973055 c:\users\user\desktop\ufv\periodo 2\aeds\tps\tp3\lista.h
+
+1447978343 source:c:\users\user\desktop\ufv\periodo 2\aeds\tps\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	<locale.h>
+
