@@ -1,3 +1,12 @@
+/*
+ * PROJETO E ANÁLISE DE ALGORITMOS - PAA
+ * Trabalho Prático 0
+ * ALUNO: Samuel Jhonata S. Tavares - 2282
+ * PROF.: Daniel Mendes
+ * Florestal, 2018
+ * Desenvolvido no Windows 10
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "ObraArte.h"
