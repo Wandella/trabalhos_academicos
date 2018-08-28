@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT resource (id|_links|_embedded|cnpj|nome|ativo|recadastrado|habilitado_licitar|id_ramo_negocio|id_cnae|id_municipio|uf|id_unidade_cadastradora|cpf|id_natureza_juridica|id_porte_empresa)*>
+<!ATTLIST resource
+    count CDATA #IMPLIED
+    offset CDATA #IMPLIED
+  >
+
+<!ELEMENT _links (link)*>
+
+<!ELEMENT link EMPTY>
+<!ATTLIST link
+    href CDATA #IMPLIED
+    rel CDATA #IMPLIED
+    title CDATA #IMPLIED
+  >
+
+<!ELEMENT _embedded (resource)*>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT cnpj (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT ativo (#PCDATA)>
+<!ELEMENT recadastrado (#PCDATA)>
+<!ELEMENT id_municipio (#PCDATA)>
+<!ELEMENT uf (#PCDATA)>
+<!ELEMENT id_natureza_juridica (#PCDATA)>
+<!ELEMENT id_porte_empresa (#PCDATA)>
+<!ELEMENT id_ramo_negocio (#PCDATA)>
+<!ELEMENT id_unidade_cadastradora (#PCDATA)>
+<!ELEMENT id_cnae (#PCDATA)>
+<!ELEMENT habilitado_licitar (#PCDATA)>
+<!ELEMENT cpf (#PCDATA)>
