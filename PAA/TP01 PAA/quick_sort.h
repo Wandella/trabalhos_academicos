@@ -2,12 +2,7 @@
 #define QUICK_SORT_H
 
 
-/**
- * 
- * @param A vetor a ser ordenado
- * @param tam tamanho do vetor
- */
-void QuickSort(int *A, int tam);
+void QuickSort(int *A, int tam, int *contaComparacao);
 
 #endif /* QUICK_SORT_H */
 
