@@ -111,11 +111,8 @@ Par* valoresSoma(int x) {
 int verifica(int *a, int x, int tam, int metOrden, int metPesq, int *contaComparacao) {
     Par *pares;
     int *S;
-
     S = copiaVetor(a, tam); //copia os valores do vetor 'a' em 'S'
-
     *contaComparacao = 0;
-
     int i;
     //ordena o vetor
     if (metOrden == QUICK) {
@@ -148,8 +145,5 @@ int verifica(int *a, int x, int tam, int metOrden, int metPesq, int *contaCompar
         free(S);
         return -1;
     }
-
-
     return 0;
-
 }

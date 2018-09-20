@@ -13,13 +13,11 @@ int main() {
     unsigned long int contaComparacao4;
     srand(time(NULL)); //semente de números aleatórios setada para o horário atual
 
-
     int i;
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 7; i++) {
 
         tam = tamanhos[i];
         x = rand() % (tam * 2);
-
         a = geraNumero(tam * 2, tam);
 
         printf("\nTamanho vetor: %d", tam);
@@ -42,9 +40,6 @@ int main() {
         }
         printf("\n----------------------------------\n");
     }
-
-
-
     return 0;
 }
 
