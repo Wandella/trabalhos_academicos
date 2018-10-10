@@ -1,9 +1,9 @@
 #ifndef CACA_PALAVRAS_H
 #define CACA_PALAVRAS_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+#include "pilha.h"
 
 #define ABAIXO 1
 #define ESQUERDA 2

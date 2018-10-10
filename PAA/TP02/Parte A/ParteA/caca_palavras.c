@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "caca_palavras.h"
 
 
@@ -19,8 +21,7 @@ char** alocarMatriz(int Linhas, int Colunas) { //Recebe a quantidade de Linhas e
     return m; //Retorna o Ponteiro para a Matriz Alocada
 }
 
-int stringToInt(char *num) //pegar valor n da instrução
-{
+int stringToInt(char *num) {
     int i, n = 0;
     for (i = 0; i < strlen(num); i++) {
         n = (n * 10) + num[i] - 48;
@@ -99,9 +100,20 @@ void copiaTabuleiro(Tabuleiro *original, Tabuleiro *copia) {
         for (j = 0; j < original->qtdColunas; j++) {
             copia->tabuleiro[i][j] = original->tabuleiro[i][j];
         }
-
     }
+}
 
+void tabuleiroZerado(Tabuleiro *tabuleiro, int qtdLinhas, int qtdColunas) {
+    int i, j;
+    //printf("\n%d %d\n", original->qtdLinhas, original->qtdColunas);
+    tabuleiro->tabuleiro = alocarMatriz(qtdLinhas, qtdColunas);
+    tabuleiro->qtdLinhas = qtdLinhas;
+    tabuleiro->qtdColunas = qtdColunas;
+    for (i = 0; i < qtdLinhas; i++) {
+        for (j = 0; j < qtdColunas; j++) {
+            tabuleiro->tabuleiro[i][j] = '*';
+        }
+    }
 }
 
 void mostraTabuleiro(Tabuleiro *tabuleiro) {
@@ -129,6 +141,164 @@ void mostraTabuleiro(Tabuleiro *tabuleiro) {
     }
 }
 
+void posiciona(int local, Posicao *posicao) {
+    switch (local) {
+        case ABAIXO:
+            posicao->linha = posicao->linha + 1;
+            return;
+        case ESQUERDA:
+            posicao->coluna = posicao->coluna - 1;
+            return;
+        case DIREITA:
+            posicao->coluna = posicao->coluna + 1;
+            return;
+    }
+}
+
+TipoItem montaItem(Posicao posicaoAtual, int tipoMovimento) {
+    TipoItem tItem;
+    tItem.movimento = tipoMovimento;
+    tItem.posicao.linha = posicaoAtual.linha;
+    tItem.posicao.coluna = posicaoAtual.coluna;
+    return tItem;
+}
+
 void cacaPalavra(Tabuleiro *tabuleiro, char *palavra) {
-    
+
+    Tabuleiro resolvido;
+    TipoPilha pilha;
+    TipoItem tItem;
+    Posicao posicaoAtual; //marca posição atual
+    int letraAtual = 0; //marca a letra atual q está sendo procurada
+    int cont = 0, testa = 0;
+    copiaTabuleiro(tabuleiro, &resolvido);
+    mostraTabuleiro(tabuleiro);
+
+    FPVazia(&pilha);
+    posicaoAtual.linha = 0;
+    posicaoAtual.coluna = 0;
+    while (cont < 10 && posicaoAtual.linha < resolvido.qtdLinhas && posicaoAtual.coluna < resolvido.qtdColunas) { //percorre todo o tabuleiro
+        printf("\n--- olhando %c\n", resolvido.tabuleiro[posicaoAtual.linha][posicaoAtual.coluna]);
+
+        if (letraAtual == 0) {//anterior errado ou primeiro
+            //confere a letra atual
+            if (resolvido.tabuleiro[posicaoAtual.linha][posicaoAtual.coluna] == palavra[letraAtual]) {// se confere
+                printf("\nconfere");
+                tItem = montaItem(posicaoAtual, ABAIXO);
+                Empilha(tItem, &pilha);
+                letraAtual++;
+                posiciona(ABAIXO, &posicaoAtual);
+
+
+            } else { //errado
+                printf("\nerrado\n");
+                //resolvido.tabuleiro[posicaoAtual.linha][posicaoAtual.coluna] = '*';
+                if (posicaoAtual.coluna < resolvido.qtdColunas) { //proxima coluna - se houver
+                    printf("proxima coluna\n");
+                    (posicaoAtual.coluna)++;
+                } else if (posicaoAtual.linha < resolvido.qtdLinhas) { //inicio da proxima linha - se houver
+                    (posicaoAtual.linha)++;
+                    posicaoAtual.coluna = 0;
+                    printf("proxima linha\n");
+                } else { //volta pra ultima configuração certa
+
+                }
+
+            }
+        } else {//anterior certo
+            printf("\n" + tItem.movimento);
+
+            while (letraAtual < strlen(palavra)) {
+                printf("\n--- olhando %c\n", resolvido.tabuleiro[posicaoAtual.linha][posicaoAtual.coluna]);
+                //confere a letra atual
+                if (resolvido.tabuleiro[posicaoAtual.linha][posicaoAtual.coluna] == palavra[letraAtual]) {// se confere
+                    switch (tItem.movimento) {
+                        case ABAIXO:
+                            printf("\nanterior = abaixo");
+                            tItem = montaItem(posicaoAtual, ESQUERDA);
+                            Empilha(tItem, &pilha);
+                            letraAtual++;
+                            posiciona(ESQUERDA, &posicaoAtual);
+                            break;
+                        case ESQUERDA:
+                            printf("\nanterior = esquerda");
+                            tItem = montaItem(posicaoAtual, DIREITA);
+                            Empilha(tItem, &pilha);
+                            letraAtual++;
+                            posiciona(DIREITA, &posicaoAtual);
+                            break;
+                        case DIREITA:
+                            printf("\nanterior = direita");
+                            tItem = montaItem(posicaoAtual, ABAIXO);
+                            Empilha(tItem, &pilha);
+                            letraAtual++;
+                            posiciona(ABAIXO, &posicaoAtual);
+                            break;
+                    }
+                    testa = 0;
+                    printf("\nanterior = nenhum");
+
+                } else {
+                    if (testa == 0 || testa >= 3) {
+                        Desempilha(&pilha, &tItem);
+                        posicaoAtual.linha = tItem.posicao.linha;
+                        posicaoAtual.coluna = tItem.posicao.coluna;
+                    }
+                    switch (tItem.movimento) {
+                        case ABAIXO:
+                            tItem.movimento = ESQUERDA;
+                            testa++;
+                            break;
+                        case ESQUERDA:
+                            tItem.movimento = DIREITA;
+                            testa++;
+                            break;
+                        case DIREITA:
+                            tItem.movimento = ABAIXO;
+                            testa++;
+                            break;
+                    }
+                    letraAtual--;
+                }
+            }
+
+
+            switch (tItem.movimento) {
+                case ABAIXO:
+                    printf("\nanterior = abaixo");
+                    tItem = montaItem(posicaoAtual, ESQUERDA);
+                    Empilha(tItem, &pilha);
+                    letraAtual++;
+                    posiciona(ESQUERDA, &posicaoAtual);
+                    break;
+                case ESQUERDA:
+                    printf("\nanterior = esquerda");
+                    break;
+                case DIREITA:
+                    printf("\nanterior = direita");
+                    break;
+            }
+            printf("\nanterior = nenhum");
+
+
+        }
+
+        if (letraAtual == strlen(palavra)) {
+            printf("\n Palavra ENCONTRADA!");
+            Imprime(pilha);
+
+            tabuleiroZerado(&resolvido, tabuleiro->qtdLinhas, tabuleiro->qtdColunas);
+            while (Tamanho(pilha) > 0) {
+                Desempilha(&pilha, &tItem);
+
+                resolvido.tabuleiro[tItem.posicao.linha][tItem.posicao.coluna] = tabuleiro->tabuleiro[tItem.posicao.linha][tItem.posicao.coluna];
+            }
+
+            break;
+        }
+        cont++;
+    }
+
+
+    mostraTabuleiro(&resolvido);
 }
